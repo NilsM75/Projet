@@ -1,0 +1,21 @@
+#titref2 {
+	display: flex;
+	justify-content: center;
+}
+#formulaire2 {
+  display: flex;
+  flex-direction: column;
+	justify-content: center space-between;
+	width: 60%;
+	padding: 35px;
+	border: 4mm ridge #32a1ce;
+	font-size: 20px;
+	margin: auto;
+}
+.soumission {
+	/*display: flex;
+	flex-direction: column-reverse;
+	justify-content: space-around;*/
+	padding: 20px;
+	margin: auto;
+}

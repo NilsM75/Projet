@@ -1,0 +1,124 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/modele1.css">
+    <!-- Impossible de mettre le style ailleurs sinon le pdf crée ne possède pas le style --> 
+    <style>
+      h2{
+        color: darkcyan;
+      }
+      .A4 {
+        width: 88.5%;
+        padding: 35px;
+        border: solid 10px black;
+        font-size: 18px;
+      }
+      #photo {
+        float: right;
+        border: solid 1px black;
+        width: 150px;
+        height: 180px;
+      }
+      .date{
+        float: right;
+        padding-right: 22px;
+      }
+      #nom, #prenom {
+        font-size: 35px;
+        font-weight: bold;
+      }
+      #profession {
+        font-size: 25px;
+        font-weight: bold;
+      }
+      #dateNaissance {
+        float: right;
+      }
+      .supplement{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+      .titre{
+        font-weight: bold;
+        font-size: 21px;
+        margin-left: 15px;
+      }
+      .Desc{
+        margin-left: 30px;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="A4">
+      <div class="block1">
+        <div class="identite">
+          <img id="photo" src="images/pdp.png">
+          <span id="nom">{{{nom}}}</span>
+          <span id="prenom">{{{prenom}}}</span>
+
+          <p id="numTel">N°: {{{numTel}}}</p>
+          <p id="mail">Adresse mail: {{{mail}}}</p>
+          <p id="codePostal">Code Postal: {{{codePostal}}}</p>
+          <span id="adresse">{{{adresse}}}</span><br>
+          <p class="date" id="age">{{{age}}} ans</p>
+          <p id="profession">{{{profession}}}</p>
+        </div>
+      </div>
+
+      <div class="Formation">
+        <h2>Formations</h2>
+        <span class="date" id="finF1">{{{finF1}}}</span>
+        <span class="date" id="debutF1">{{{debutF1}}}</span>
+        <p class="titre" id="intitule1">{{{intituleFormation1}}}</p>
+        <p class="Desc" id="description1">{{{descriptionFormation1}}}</p>
+        <span class="date" id="finF2">{{{finF2}}}</span>
+        <span class="date" id="debutF2">{{{debutF2}}}</span>
+        <p class ="titre" id="intitule2">{{{intituleFormation2}}}</p>
+        <p class="Desc" id="description2">{{{descriptionFormation2}}}</p>
+        <span class="date" id="finF3">{{{finF3}}}</span>
+        <span class="date" id="debutF3">{{{debutF3}}}</span>
+        <p class ="titre" id="intitule3">{{{intituleFormation3}}}</p>
+        <p class="Desc" id="description3">{{{descriptionFormation3}}}</p>
+      </div>
+
+      <div class="ExperiencesPro">
+        <h2>Experiences Professionnelles</h2>
+        <p class ="titre" id="experience1">{{{intituleExperience1}}}</p>
+        <p class="Desc" id="descExpe1">{{{descExpe1}}}</p>
+        <p class ="titre" id="experience2">{{{intituleExperience2}}}</p>
+        <p class="Desc" id="descExpe2">{{{descExpe2}}}</p>
+        <p class ="titre" id="experience3">{{{intituleExperience3}}}</p>
+        <p class="Desc" id="descExpe3">{{{descExpe3}}}</p>
+      </div>
+
+      <div class="supplement">
+        <div class="Interets">
+            <h2>Centre d'intérêts</h2>
+              <ul>
+                <li id="hobbies1">{{{hobbies1}}}</li>
+                <li id="interet2">{{{hobbies2}}}</li>
+                <li id="interet3">{{{hobbies3}}}</li>
+              </ul>
+        </div>
+        <div class="langues">
+            <h2>Langues</h2>
+              <ul>
+                {{{english}}}
+                {{{french}}}
+                {{{spanish}}}
+                {{{russian}}}
+                {{{italian}}}
+                {{{mandarin}}}
+                {{{arabic}}}
+              </ul>
+          </div>
+      </div>
+      
+      
+    </div>
+  </body>
+</html>

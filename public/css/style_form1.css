@@ -1,0 +1,116 @@
+
+@font-face {/* Définition d'une nouvelle police nommée Neon */
+    font-family: 'Neon';
+    src: url('polices/Neon.ttf') format('truetype');}
+
+html, body {
+  height: 100%;
+  margin: 0; padding: 0;
+}
+
+body {
+  background-color: #ADD6E1;
+  font-family: Arial Narrow, sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  min-height: 10%;
+  max-width: 100%;
+  max-height: 10%;
+  background-color: white;
+  border-top: solid 2px ;
+  align-items: center;
+  box-shadow: 0px 1px 3px #EFE9EE;
+  z-index: 10;
+  position: relative;
+}
+
+/* header h1 {
+	font-family: 'Neon';
+	margin-left: 10px; 
+} */
+
+header img {
+  width:2.5%;
+  height:2.5%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 2px;
+}
+
+header nav {
+	display: flex;
+	flex-direction: row;
+}
+
+/* Si on veut forcer l'utilisateur à saisir un champ
+input:invalid {
+  border: 2px dashed red;
+}
+
+input:valid {
+  border: 1px solid black;
+}
+*/
+
+#menu {
+  /*height: 100%;*/
+}
+
+
+#menu a{
+  color : #267AE1;
+  text-decoration: none; /*enleve le underline*/
+  /*display: inline-block;*/
+  line-height: 50px;
+  margin-left: 20px;
+  border-bottom: solid 2px white;
+}
+
+#menu a:hover{
+  color : #f95f2d;
+  text-decoration: none;
+  /*margin-left: 20px;*/
+  border-bottom: solid 2px #f95f2d;
+}
+
+#connexion{
+  display : flex;
+  margin-left: auto;
+  margin-right: auto; 
+  width: 16%; 
+  justify-content : space-around;
+}
+
+#connexion a {
+  color : #267AE1;
+  text-decoration: none;
+  border : solid 2px #267AE1;
+  border-radius : 3em;
+  padding: 3px 10px 3px 10px;
+}
+
+#connexion a:hover {
+  color : white;
+  background-color:#f95f2d ;
+  text-decoration: none;
+  border : solid 2px #f95f2d;
+  border-radius : 3em;
+  padding: 3px 10px 3px 10px;
+}
+
+.corps {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end; /*aligne les elements flex selon l'axe transversal*/
+  padding: 2% 4% 2% 40%;
+  margin: auto;
+}
+#titref1{
+  align-self: center;
+}
+
+
