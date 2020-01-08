@@ -1,0 +1,97 @@
+
+<body>
+<h2 id="titref2">Faisons connaissance!</h2>
+
+  <form id="formulaire2">
+      Nom : <input type="text" name="nom" value="Poutine"/>
+      Prenom : <input type="text" name="prenom" value="Vladimir" />
+      Age : <input type="number" name="age" value="67" />
+      Adresse : <input type="text" name="adresse" id="adresse">
+      Code Postal : <input type="number" name="codePostal" id="codePostal" maxlength="5">
+      Mail :<input type="email" name="mail" />
+      Numéro de Téléphone :<input type="number" name="numTel" id="numTel" minlength="10" maxlength="12">
+      Poste occupé ou poste souhaité : <input type="text" name="profession" id="profession">
+      Photo (facultatif) : <input type="file" id="photo" name="photo" accept="image/png, image/jpeg">
+      <br>
+      <strong>Quelles langues parlez vous?</strong> <br>
+    <span>Anglais<input name="english" id="langAng" type="checkbox" value="" onchange="this.value = this.checked ? 'Anglais' : ''"></span>
+    <span>Français<input name="french" id="langFra" type="checkbox" value="" onchange="this.value = this.checked ? 'Français' : ''"></span>
+    <span>Espagnol<input name="spanish" id="langEsp" type="checkbox" value="" onchange="this.value = this.checked ? 'Espagnol' : ''"></span>
+    <span>Russe<input name="russian" id="langRus" type="checkbox" value="" onchange="this.value = this.checked ? 'Russe' : ''"></span>
+    <span>Italien<input name="italian" id="langIta" type="checkbox" value="" onchange="this.value = this.checked ? 'Italien' : ''"></span>
+    <span>Mandarin<input name="mandarin" id="langMan" type="checkbox" value="" onchange="this.value = this.checked ? 'Mandarin' : ''"></span> 
+    <span>Arabe<input name="arabic" id="langAra" type="checkbox" value="" onchange="this.value = this.checked ? 'Arabe' : ''"></span>
+    <br>
+    <strong>Quels sont vos centres d'intérêts?</strong> <br>
+    1er
+    <input name="hobbies1" id="hobbie1" type="text" maxlength="25">
+    2eme
+    <input name="hobbies2" id="hobbie2" type="text" maxlength="25">
+    3eme
+    <input name="hobbies3" id="hobbie3" type="text" maxlength="25">
+    <br>
+
+    <strong>Quelles sont vos formations?</strong> <br>
+    Intitulé de la premiere:
+    <input name="intituleFormation1" id="intituleFormation1" type="text" maxlength="35">
+    Décrivez les spécialités de la formation:
+    <input name="descriptionFormation1" id="descriptionFormation1" type="text" maxlength="200">
+    <span id="datesF1">
+      Date de début: <input name="debutF1" type="date">
+      Date de fin: <input name="finF1" type="date">
+    </span> 
+    <br>
+    Intitulé de la 2eme:
+    <input name="intituleFormation2" id="intituleFormation2" type="text" maxlength="35">
+    Décrivez les spécialités de la formation:
+    <input name="descriptionFormation2" id="descriptionFormation2" type="text" maxlength="200">
+    <span id="datesF2">
+      Date de début: <input name="debutF2" type="date">
+      Date de fin: <input name="finF2" type="date">
+    </span> 
+    <br>
+    Intitulé de la 3eme:
+    <input name="intituleFormation3" id="intituleFormation3" type="text" maxlength="35">
+    Décrivez les spécialités de la formation:
+    <input name="descriptionFormation3" id="descriptionFormation3" type="text" maxlength="200">
+    <span id="datesF3">
+      Date de début: <input name="debutF3" type="date">
+      Date de fin: <input name="finF3" type="date">
+    </span> 
+    <br>
+
+
+    <strong>Quelles sont vos expériences?</strong> <br>
+    1er intitulé:
+    <input name="intituleExperience1" id="intituleExperience1" type="text" maxlength="35">
+    Description:
+    <input name="descExpe1" id="descExpe1" type="text" maxlength="270">
+    <span id="datesE1">
+      Date de début: <input name="debutE1" type="date">
+      Date de fin: <input name="finE1" type="date">
+    </span> 
+    <br>
+    2eme intitulé:
+    <input name="intituleExperience2" id="intituleExperience2" type="text" maxlength="35">
+    Description 2:
+    <input name="descExpe2" id="descExpe2" type="text" maxlength="270">
+    <span id="datesE2">
+      Date de début: <input name="debutE2" type="date">
+      Date de fin: <input name="finE2" type="date">
+    </span> 
+    <br>
+    3eme intitulé:
+    <input name="intituleExperience3" id="intituleExperience3" type="text" maxlength="35">
+    Description 3:
+    <input name="descExpe3" id="descExpe3" type="text" maxlength="270">
+    <span id="datesE3">
+      Date de début: <input name="debutE3" type="date">
+      Date de fin: <input name="finE3" type="date">
+    </span> 
+    <br>
+    <button class="soumission" type="submit">Envoyer</button>
+    <button class="soumission" type="reset" >Remettre à zéro</button>
+
+  </form>
+
+</body>
