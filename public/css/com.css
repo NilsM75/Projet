@@ -2,12 +2,6 @@ input[type="date" i] {
   padding: 14px;
 }
 
-.table-condensed td, .table-condensed th {
-  font-size: 14px;
-  font-family: "Roboto", "Arial", "Helvetica Neue", sans-serif;
-  font-weight: 400;
-}
-
 .daterangepicker td {
   width: 40px;
   height: 30px;
@@ -48,12 +42,9 @@ input {
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
-  width: 100%;
+  width: 99%;
   font-size: 14px;
   font-family: inherit;
-}
-
-.input--style-4 {
   line-height: 50px;
   background: #fafafa;
   -webkit-box-shadow: inset 0px 1px 3px 0px rgba(0, 0, 0, 0.08);
@@ -69,33 +60,6 @@ input {
   -o-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   transition: all 0.4s ease;
-}
-
-.input--style-4::-webkit-input-placeholder {
-  /* WebKit, Blink, Edge */
-  color: #666;
-}
-
-.input--style-4:-moz-placeholder {
-  /* Mozilla Firefox 4 to 18 */
-  color: #666;
-  opacity: 1;
-}
-
-.input--style-4::-moz-placeholder {
-  /* Mozilla Firefox 19+ */
-  color: #666;
-  opacity: 1;
-}
-
-.input--style-4:-ms-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #666;
-}
-
-.input--style-4:-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: #666;
 }
 
 .label {
@@ -198,6 +162,3 @@ input {
   cursor: pointer;
 }
 
-.select--no-search .select2-search {
-  display: none !important;
-}

@@ -46,7 +46,7 @@ header nav {
 	flex-direction: row;
 }
 
-/* Si on veut forcer l'utilisateur à saisir un champ
+
 input:invalid {
   border: 2px dashed red;
 }
@@ -54,7 +54,7 @@ input:invalid {
 input:valid {
   border: 1px solid black;
 }
-*/
+
 
 #menu {
   /*height: 100%;*/
@@ -114,4 +114,13 @@ input:valid {
   align-self: center;
 }
 
-
+fieldset
+{
+    background-color:#CCC;
+    max-width:800px;
+    padding:16px;	
+    border:2px solid green;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;	
+    border-radius:8px;	
+}
