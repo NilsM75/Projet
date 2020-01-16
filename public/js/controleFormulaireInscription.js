@@ -1,12 +1,17 @@
 document.getElementById("inscription").addEventListener("submit", function(e) {
-	e.preventDefault() ;
+	e.preventDefault() ;	
+	document.getElementById("erreurEMail").innerHTML = "" ;
+	document.getElementById("erreurPseudo").innerHTML = "" ;
+	document.getElementById("erreurMDP1").innerHTML = "" ;
+	document.getElementById("erreurMDP2").innerHTML = "" ;		
+	document.getElementById("erreurEQ").innerHTML = "" ; 	
 	
 	let email = document.getElementById("email") ;
 	let pseudo = document.getElementById("pseudo") ;
 	let mdp1 = document.getElementById("motDePasse") ; 
 	let mdp2 = document.getElementById("confirmerMotDePasse") ; 
 	let erreur = false ; 
-	let erreurEMail, erreurPseudo, erreurMDP1, erreurMDP2 ; 
+	let erreurEMail, erreurPseudo, erreurMDP1, erreurMDP2, erreurEQ ; 
 	
 	if(!email.value) {
 		email.style.backgroundColor = "#fba" ;
@@ -21,7 +26,7 @@ document.getElementById("inscription").addEventListener("submit", function(e) {
 		let caracteresAvantPoint = false ; 
 		let caracteresAvantArobase = false ; 
 		let aux ;
-		
+
 		for(let i = 0 ; i < email.value.length ; i ++){
 				nbc ++ ;
 				
@@ -67,7 +72,8 @@ document.getElementById("inscription").addEventListener("submit", function(e) {
 		mdp1.style.backgroundColor = "#fba" ;
 		mdp1.focus() ; 
 		erreurMDP1 = "Veuillez renseigner un mot de passe." ; 
-		erreur = true ; 
+		erreur = true ;
+		tp = true ; 
 	}
 	
 	if(!mdp2.value) {
@@ -77,12 +83,27 @@ document.getElementById("inscription").addEventListener("submit", function(e) {
 		erreur = true ; 
 	} 
 	
+	if(mdp1.value != mdp2.value){
+		mdp1.style.backgroundColor = "#fba" ;
+		mdp1.focus() ; 
+		mdp2.style.backgroundColor = "#fba" ;
+		mdp2.focus() ; 
+		erreurEQ = "Les deux mots de passes ne sont pas identiques !" ; 
+		erreur = true ; 
+	}
+	
 	if (erreur){
 		e.preventDefault() ; 
-		document.getElementById("erreurEMail").innerHTML = erreurEMail ;
-		document.getElementById("erreurPseudo").innerHTML = erreurPseudo ;
-		document.getElementById("erreurMDP1").innerHTML = erreurMDP1 ;
-		document.getElementById("erreurMDP2").innerHTML = erreurMDP2 ;		
+		if(erreurEMail != undefined) 
+			document.getElementById("erreurEMail").innerHTML = erreurEMail ;
+		if(erreurPseudo != undefined) 
+			document.getElementById("erreurPseudo").innerHTML = erreurPseudo ;
+		if(erreurMDP1 != undefined) 
+			document.getElementById("erreurMDP1").innerHTML = erreurMDP1 ;
+		if(erreurMDP2 != undefined) 
+			document.getElementById("erreurMDP2").innerHTML = erreurMDP2 ;		
+		if(erreurEQ != undefined)
+			document.getElementById("erreurEQ").innerHTML = erreurEQ ; 
 		return false ; 
 	}
 
